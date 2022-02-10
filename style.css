@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --common-color: #1f2937;
+}
+
+header {
+  height: 100px;
+  background-color: #1f2937;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+}
+.header-logo {
+  flex: 0 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  gap: 40px;
+}
+nav ul li,
+nav ul li a {
+  font-style: none;
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+nav ul li a:after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: salmon;
+  transition: all 0.3s;
+  display: block;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+nav ul li a:hover {
+  font-weight: bold;
+}
+.container1 {
+  height: 50vh;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #1f2937;
+  justify-content: center;
+  align-items: center;
+}
+.signup-container {
+  width: 30%;
+  color: white;
+  padding-left: 50px;
+}
+.image-placeholder {
+  width: 30%;
+  padding-left: 50px;
+  height: auto;
+}
+img {
+  width: 90%;
+  height: auto;
+}
+h2 {
+  text-align: center;
+}
+.container2 {
+  padding: 20px 0;
+}
+.boxes {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px 0;
+}
+.flex-inside {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  border: 2px solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.quote {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #e5e7eb;
+}
+.quote p {
+  width: 30%;
+}
+.call-to-action {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlight {
+  background-color: #3882f6;
+  height: 150px;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+}
+footer {
+  background-color: var(--common-color);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.sign-up-btn1,
+.sign-up-btn2 {
+  height: 40px;
+  width: 80px;
+  border-radius: 20px;
+  background-color: #25effa;
+  border: 3px solid white;
+  transition: all 0.3s;
+}
+.sign-up-btn1 {
+  margin-top: 20px;
+}
+.sign-up-btn1:hover,
+.sign-up-btn2:hover {
+  cursor: pointer;
+  height: 50px;
+  width: 90px;
+  background-color: rgb(30, 172, 223);
+  border: 4px solid rgb(rgb(125, 245, 243), green, blue);
+}
